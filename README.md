@@ -4,6 +4,8 @@ The goal of this project is to follow along and explore the [Introduction to Lan
 
 ## Getting started
 
+Please copy `.env.sample` to `.env` and use your OpenAI API key and other desired environment variables.
+
 ### Prerequisites
 
 Please make sure that you have the following installed on your development environment:
