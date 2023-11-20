@@ -3,6 +3,7 @@
     "dotenv",
     "htmlcov",
     "langchain",
+    "ruan",
     "Sonoma",
     "thefourcorners",
     "vectorstores",
