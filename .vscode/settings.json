@@ -1,3 +1,12 @@
 {
-  "cSpell.words": ["htmlcov", "langchain", "Sonoma", "venv"]
+  "cSpell.words": [
+    "dotenv",
+    "htmlcov",
+    "langchain",
+    "ruan",
+    "Sonoma",
+    "thefourcorners",
+    "vectorstores",
+    "venv"
+  ]
 }

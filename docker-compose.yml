@@ -1,7 +1,13 @@
-version: "3.4"
+version: "3.8"
 
 services:
   redis:
-    image: redis:latest
+    image: redis/redis-stack
     ports:
-      - "6379:6379"
+      - "6379:6379" # Redis port
+      - "8001:8001" # RedisInsight port - Available at http://localhost:8001
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
