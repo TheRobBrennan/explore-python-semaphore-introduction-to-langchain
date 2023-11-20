@@ -1,7 +1,12 @@
-version: "3.4"
+version: "3.8"
 
 services:
   redis:
-    image: redis:latest
+    image: redis/redis-stack
     ports:
       - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
