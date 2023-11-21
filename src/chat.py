@@ -32,9 +32,13 @@ model = ChatOpenAI(
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 qa = ConversationalRetrievalChain.from_llm(llm=model, retriever=retriever, memory=memory)
 
-print("Ask any question regarding The Four Corners in California book:")
-# keep the bot running in a loop to simulate a conversation
-while True:
-    question = input()
-    result = qa({"question": question})
-    print (result["answer"])
+def run_chat():
+    print("Ask any question regarding The Four Corners in California book:")
+    while True:
+        question = input()
+        result = qa({"question": question})
+        print(result["answer"])
+
+# You can add this at the end of your script to run the chat when the script is executed directly
+if __name__ == "__main__":
+    run_chat()
