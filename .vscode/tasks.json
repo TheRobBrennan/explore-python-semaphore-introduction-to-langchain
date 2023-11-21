@@ -17,7 +17,7 @@
       "label": "docker-run: debug",
       "dependsOn": ["docker-build"],
       "python": {
-        "file": "src/main.py"
+        "file": "src/chat.py"
       }
     }
   ]
